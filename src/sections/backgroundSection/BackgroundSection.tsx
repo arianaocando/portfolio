@@ -17,10 +17,9 @@ function BackgroundSection() {
        const timelineBottom =
          timelineRef.current.getBoundingClientRect().bottom;
        const titleTop = titleRef.current.getBoundingClientRect().top;
-       const newHeight = titleTop - timelineBottom + 130; // Ajuste fino
+       const newHeight = titleTop - timelineBottom + 490;
 
-
-       // Establecer variable CSS global
+      
        document.documentElement.style.setProperty(
          "--line-height",
          `${newHeight}px`
@@ -39,6 +38,7 @@ function BackgroundSection() {
             imge={image}
           />
         </div>
+        <div className='timeline-cards'>
 
         <div className="line"></div>
         <div className="timeline" ref={timelineRef}>
@@ -54,6 +54,7 @@ function BackgroundSection() {
           ))}
         </div>
       </div>
+        </div>
       <p className="timeline-title" ref={titleRef}>
         {t('navbar.sections.background')}
       </p>
