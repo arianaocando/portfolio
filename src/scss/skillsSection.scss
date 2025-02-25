@@ -1,0 +1,15 @@
+.skills-section {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    p {
+        font-size: 44px;
+        font-weight: 600;
+        color:  #B34C81;
+        text-align: end;
+        position: relative;
+        text-transform: capitalize;
+    }
+}

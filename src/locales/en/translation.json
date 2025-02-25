@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "sections": {
+      "background": "background",
+      "skills": "skills",
+      "projects": "projects"
+    }
+  },
+  "banner": {
+    "name": "Eng. Ariana"
+  }
+}

@@ -1,0 +1,54 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: rgba(168, 146, 192, 1);
+  color: rgba(249, 242, 225, 1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 6%;
+  .contact-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .description-text {
+    color: hsla(269, 27%, 15%, 1);
+    font-size: 16px;
+    font-weight: 400;
+    width: 730px;
+    margin-bottom: 70px;
+    text-align: justify;
+  }
+  .footer-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 12px;
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      background-color: hsl(329, 40%, 50%);
+      padding: 12px 24px;
+      border-radius: 12px;
+      a {
+        text-decoration: none;
+        color: #F2EFF6;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &:hover {
+        background-color: rgb(117, 82.125, 147.375);
+      }
+    }
+  }
+  .develop-name {
+    margin: 70px 0px 20px 0px;
+    color: #F2EFF6;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "navbar": {
+        "sections": [
+            "trayectoria", "habilidades", "proyectos"
+        ],
+        "languages": ["en", "es"]
+    }
+}

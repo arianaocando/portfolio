@@ -1,0 +1,62 @@
+.timeline-section {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 30px 0px;
+}
+
+.featured-container {
+  width: 40%;
+  justify-items: end;
+}
+
+.line {
+   
+  position: absolute;
+  left: 50px; // Ajusta según la posición deseada
+  top: 0;
+  width: 2px;
+  height: var(--line-height, 100%); // Usa la variable CSS calculada dinámicamente
+  border-left: 2px dashed #c69ac9; // Línea punteada
+
+ /*  .timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      background-color: #c69ac9;
+      border-radius: 50%;
+    }
+  } */
+}
+
+.timeline {
+  position: relative;
+  padding-left: 22px;
+  width: 40%;
+}
+
+.timeline-title {
+    font-size: 44px;
+    font-weight: 600;
+    color:  #B34C81;
+    text-align: left;
+    text-transform: capitalize;
+}
+

@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "sections": {
+        "background": "trayectoria",
+        "skills": "habilidades",
+        "projects": "projectos"
+    }
+  },
+  "banner": {
+    "name": "Ing. Ariana"
+  }
+}

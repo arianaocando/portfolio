@@ -1,0 +1,45 @@
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.selected {
+      .card {
+        background: rgba(240, 219, 230, 1);
+        border: 2px solid #b5a3d6;
+        h3 {
+          color:rgba(179, 76, 129, 1)
+        }
+      }
+      .year {
+        color: rgba(179, 76, 129, 1);
+      }
+    }
+
+    .year {
+      position: absolute;
+      left: -120px;
+      font-size: 30px;
+      font-weight: bold;
+      color:rgba(168, 146, 192, 1)
+    }
+
+    .card {
+    color:  #3B5C66;
+      background: #f9f3eb;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      p {
+        color: rgba(178, 167, 190, 1);
+        font-size: 16px;
+      }
+    }
+  }

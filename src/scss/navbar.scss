@@ -1,0 +1,23 @@
+.navbar-content {
+    width: 70%;
+    max-width: 1200px;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    padding: 24px 0px;
+    &__item-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 456px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+        a {
+            text-decoration: none;
+            &:hover, &:focus {
+                color: rgba(168, 146, 192, 1);
+            }
+        }
+    }
+}

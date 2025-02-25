@@ -1,0 +1,18 @@
+.banner-section {
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 197px;
+        line-height: 5rem;
+        h1 {
+            font-size: 80px;
+            font-weight: 600;
+            color: rgba(242, 239, 246, 1);
+            line-height: inherit;
+            margin: 0;
+        }
+        .lastname{
+            font-weight: 300;
+        }
+    }
+}

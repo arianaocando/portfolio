@@ -1,0 +1,73 @@
+.skill-card {
+    .skill-card__title {
+        font-size: 28px;
+        color: #A892C0;
+        width: 100%;
+        text-align: start;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+    .skill-info {
+        width: 40%;
+        &__title {
+            text-align: start;
+            font-size: 16px;
+            font-weight: 600;
+            color: #261C30;
+        }
+        &__description {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: start;
+            color: #261C30;
+            margin: 0;
+        }
+    }
+    .related-projects-section {
+        width: 350px;
+    }
+    .related-projects {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: start;
+    }
+    .card-project-container {
+        background-color: #E5D9F2;
+        padding: 8px 16px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        .project-info {
+            p {
+                font-size: 16px;
+                text-align: start;
+                margin: 0;
+            }
+            &__title {
+                font-weight: 600;
+                color: #261C30;
+                text-transform: capitalize;
+            }
+            &__subtitle {
+                font-weight: 400;
+                color: #B29EC7;
+            }
+        }
+        .see-project-button {
+            background: #B34C81;
+            color: beige;
+            border: 1px solid #B34C81;
+            padding: 0 21px;
+            border-radius: 18px;
+            font-size: 15px;
+            font-weight: 600;
+            &:hover {
+                background-color: rgb(117, 82.125, 147.375);
+            }
+        }
+    }
+}
