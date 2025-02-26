@@ -1,42 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import teamWorkImage from "../../assets/team-work.jpg";
 import SkillPill from "../../components/skillPill/SkillPill";
-
-interface Project {
-  id: number;
-  title: string;
-  resume: string;
-  description: string;
-  image: string;
-  technologies: string[];
-}
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "My amazing project with very long name",
-    resume: "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
-    description:
-      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
-    image: teamWorkImage,
-    technologies: ["Typescript", "Laravel", "PostgreSQL"],
-  },
-  {
-    id: 2,
-    title: "Another great project",
-    resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
-    description:
-      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
-    image: teamWorkImage,
-    technologies: ["React", "SASS", "Node.js"],
-  },
-];
+import { Project, projects } from "../../config/constants";
 
 function ProjectSection() {
   const [selectedProject, setSelectedProject] = useState<Project>(projects[0]);
-  
-    const {t} = useTranslation();
+
+  const { t } = useTranslation();
   return (
     <section id="portfolio" className="portfolio">
       <p className="section-name">{t("navbar.sections.projects")}</p>

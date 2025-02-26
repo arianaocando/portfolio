@@ -1,0 +1,25 @@
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .splash {
+        position: absolute;
+        z-index: -2;
+        &.first-section {
+            right: 0;
+            top: 90dvh;
+        }
+        &.second-section {
+            left: 0;
+            top: 180dvh;
+        }
+        &.third-section {
+            right: 0;
+            top: 240dvh;
+        }
+        &.footer-section {
+            left: 0;
+            bottom: 52dvh;
+        }
+    }
+}

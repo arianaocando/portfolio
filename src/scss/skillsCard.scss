@@ -27,9 +27,9 @@
             margin: 0;
         }
     }
-    .related-projects-section {
+    /* .related-projects-section {
         width: 350px;
-    }
+    } */
     .related-projects {
         font-size: 16px;
         font-weight: 600;
@@ -41,6 +41,8 @@
         border-radius: 12px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
         .project-info {
             p {
                 font-size: 16px;
@@ -59,15 +61,20 @@
         }
         .see-project-button {
             background: #B34C81;
-            color: beige;
             border: 1px solid #B34C81;
-            padding: 0 21px;
-            border-radius: 18px;
-            font-size: 15px;
-            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 12px;
+            margin-left: 24px;
+            a {
+                color: beige;
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: none;
+            }
             &:hover {
                 background-color: rgb(117, 82.125, 147.375);
             }
+            
         }
     }
 }

@@ -7,6 +7,8 @@
   padding: 20px;
   text-align: center;
   margin-top: 6%;
+  height: 60dvh;
+  justify-content: flex-end;
   .contact-text {
     font-size: 40px;
     font-weight: 700;
@@ -46,7 +48,7 @@
     }
   }
   .develop-name {
-    margin: 70px 0px 20px 0px;
+    margin: 170px 0px 20px 0px;
     color: #F2EFF6;
     font-size: 16px;
     font-weight: 400;

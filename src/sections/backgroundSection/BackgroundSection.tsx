@@ -17,7 +17,7 @@ function BackgroundSection() {
        const timelineBottom =
          timelineRef.current.getBoundingClientRect().bottom;
        const titleTop = titleRef.current.getBoundingClientRect().top;
-       const newHeight = titleTop - timelineBottom + 490;
+       const newHeight = titleTop - timelineBottom + 660;
 
       
        document.documentElement.style.setProperty(

@@ -1,31 +1,44 @@
+import { useState } from 'react';
+import { SkillProps } from '../../config/constants';
 import SkillPill from '../skillPill/SkillPill';
 
-function SkillCard({ skill }) {
+function SkillCard({ info, key }: { info: SkillProps; key: number }) {
+  const [activeSkill, setActiveSkill] = useState<string | undefined>('typescript')
+  
   return (
-    <div className="skill-card w-100 mb-5">
-      <p className="skill-card__title">Frontend</p>
-      <SkillPill skills={["JavaScript", "TypeScript"]} />
-      <div className="skill-card__container">
-        <div className="skill-info">
-          <p className="skill-info__title">Typescript</p>
-          <p className="skill-info__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            adipisci assumenda placeat accusantium necessitatibus beatae
-            veritatis, facere vitae, ipsam sunt rem dolores, quam alias corporis
-            quaerat deleniti perferendis quidem voluptate?
-          </p>
-        </div>
-        <div className="related-projects-section">
-          <p className="related-projects">Proyectos relacionados</p>
-          <div className="card-project-container ">
-            <div className="w-50 project-info">
-              <p className="project-info__title">titulo</p>
-              <p className="project-info__subtitle">subtitulo</p>
-            </div>
-            <button className="see-project-button">Ver proyecto</button>
+    <div className="skill-card w-100 mb-5" key={key}>
+      <p className="skill-card__title">{info.role}</p>
+      <SkillPill
+        skills={info.stacks}
+        activeClass={activeSkill}
+        onClick={(nextState) => {
+          setActiveSkill(nextState);
+        }}
+      />
+      {activeSkill && (
+        <div className="skill-card__container">
+          <div className="skill-info">
+            <p className="skill-info__title">{activeSkill}</p>
+            <p className="skill-info__description">{info.description}</p>
+          </div>
+          <div className="related-projects-section">
+            <p className="related-projects">Proyectos relacionados</p>
+            {info.portfolio.map((portfolio, index) => (
+              <div className="card-project-container" key={index}>
+                <div className="project-info">
+                  <p className="project-info__title">{portfolio.title}</p>
+                  <p className="project-info__subtitle">{portfolio.company}</p>
+                </div>
+                <button className="see-project-button">
+                  <a aria-current="step" href={portfolio.url}>
+                    Ver proyecto
+                  </a>
+                </button>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }  
