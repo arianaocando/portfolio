@@ -5,7 +5,7 @@ import { ThemeModeContext } from "../../contexts/ThemeModeContext.tsx";
 import { ThemeModeContextType } from "../../contexts/types.themeMode.ts";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher.tsx";
 import ToggleButton from "../themeButton/ThemeButton.tsx";
-import { HEADER_SECTIONS } from "../../config/constants.ts";
+import { HEADER_SECTIONS } from "../../config/constants.tsx";
 
 function NavBar() {
   const { t } = useTranslation();
