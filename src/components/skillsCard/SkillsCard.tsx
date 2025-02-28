@@ -1,12 +1,20 @@
-import { useState } from 'react';
-import { SkillProps } from '../../config/constants';
-import PillButton from "../pillButton/PillButton";
+import "@styles/SkillsCard.scss";
+import React from "react";
+import { SkillProps } from "../../config/constants.ts";
+import PillButton from "../pillButton/PillButton.tsx";
 
-function SkillCard({ info, key }: { info: SkillProps; key: number }) {
-  const [activeSkill, setActiveSkill] = useState<string | undefined>('typescript')
-  
+interface SkillCardProp {
+  info: SkillProps;
+  index: number;
+}
+
+function SkillCard({ info, index }: SkillCardProp) {
+  const [activeSkill, setActiveSkill] = React.useState<string | undefined>(
+    "typescript"
+  );
+
   return (
-    <div className="skill-card w-100 mb-5" key={key}>
+    <div className="skill-card w-100" key={index}>
       <p className="skill-card__title">{info.role}</p>
       <PillButton
         skills={info.stacks}
@@ -42,6 +50,6 @@ function SkillCard({ info, key }: { info: SkillProps; key: number }) {
       )}
     </div>
   );
-}  
+}
 
 export default SkillCard;

@@ -1,78 +1,83 @@
+@import "./custom-variables";
+
 .skill-card {
+    margin-bottom: $spacing*6;
     .skill-card__title {
-        font-size: 28px;
-        color: #A892C0;
+        font-size: 1.75rem;
+        color: $accent;
         width: 100%;
         text-align: start;
+        margin-bottom: $spacing*4;
+        font-weight: $semibold-font-weight;
     }
     &__container {
+        margin-top: $spacing*3;
         display: flex;
         flex-direction: row;
-        margin-top: 1rem;
         justify-content: space-between;
+        align-items: flex-start;
     }
     .skill-info {
-        width: 40%;
+        width: 60%;
         &__title {
-            text-align: start;
-            font-size: 16px;
-            font-weight: 600;
-            color: #261C30;
+            width: auto;
+            font-weight: $semibold-font-weight;
+            margin-bottom: $spacing*3;
         }
         &__description {
-            font-size: 16px;
-            font-weight: 400;
-            text-align: start;
-            color: #261C30;
-            margin: 0;
+            width: auto;
+            margin-bottom: 0;
         }
     }
-    /* .related-projects-section {
-        width: 350px;
-    } */
+    .related-projects-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 30%;
+        justify-content: flex-start;
+    }
     .related-projects {
-        font-size: 16px;
-        font-weight: 600;
-        text-align: start;
+        font-weight: $semibold-font-weight;
+        color: $therciary;
+        margin-bottom: $spacing*3;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
     }
     .card-project-container {
-        background-color: #E5D9F2;
-        padding: 8px 16px;
-        border-radius: 12px;
+        width: 100%;
+        background-color: $accent-light-1;
+        padding: $spacing*2;
+        border-radius: $border;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 8px;
+        margin-bottom: $spacing*3;
         .project-info {
+            width: 60%;
             p {
-                font-size: 16px;
-                text-align: start;
                 margin: 0;
             }
             &__title {
-                font-weight: 600;
-                color: #261C30;
+                font-weight: $semibold-font-weight;
                 text-transform: capitalize;
             }
             &__subtitle {
-                font-weight: 400;
-                color: #B29EC7;
+                color: $accent-light-2;
             }
         }
         .see-project-button {
-            background: #B34C81;
-            border: 1px solid #B34C81;
-            padding: 8px 12px;
-            border-radius: 12px;
-            margin-left: 24px;
+            background: $therciary;
+            border:none;
+            padding: $spacing*2 $spacing*3;
+            border-radius: $border;
             a {
-                color: beige;
-                font-size: 15px;
-                font-weight: 600;
+                color: $main-light;
+                font-weight: $semibold-font-weight;
                 text-decoration: none;
             }
             &:hover {
-                background-color: rgb(117, 82.125, 147.375);
+                background-color: $accent-dark-0;
             }
             
         }
