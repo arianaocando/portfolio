@@ -1,34 +1,27 @@
-import { useState } from "react";
+import "@styles/LanguageSwitcher.scss";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { Language } from "@/types/language";
-import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from "@/config/languages";
-import arrowSVG from "@/assets/Vector.svg";
+import arrowSVG from "@/assets/icon/Vector.svg";
+import { Language } from "@/types/language.ts";
+import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from "@/config/languages.ts";
+
 /**
  * Language switcher component that displays a dropdown with available languages
  * @component
  */
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const [currentLanguage, setCurrentLanguage] =
-    useState<Language>(DEFAULT_LANGUAGE);
+    React.useState<Language>(DEFAULT_LANGUAGE);
   const nextLanguage =
     SUPPORTED_LANGUAGES.find(
       (language: Language) => language.code !== currentLanguage.code
     ) || DEFAULT_LANGUAGE;
 
-  /**
-   * Alterna el estado abierto/cerrado del dropdown
-   * @function toggleDropdown
-   */
-  const toggleDropdown = () => setIsOpen((prevState) => !prevState);
+  const toggleDropdown: () => void = () => setIsOpen((prevState) => !prevState);
 
-  /**
-   * Handles language change
-   * @param {Language} language - The selected language object
-   */
-  const handleLanguageChange = (language: Language) => {
-    console.log(`Changing language to: ${language.code}`);
+  const handleLanguageChange: (language: Language) => void = (language: Language) => {
     i18n.changeLanguage(language.code);
     setCurrentLanguage(language);
     setIsOpen(false);
@@ -42,7 +35,8 @@ function LanguageSwitcher() {
         aria-expanded={isOpen}
         type="button"
       >
-        {`${currentLanguage.name} ${currentLanguage.flag}`}
+        <p>{currentLanguage.name}</p>
+        <p>{currentLanguage.flag}</p>
         <img src={arrowSVG} alt="Arrow" />
       </button>
 
@@ -56,7 +50,8 @@ function LanguageSwitcher() {
             }
             aria-selected={i18n.language.startsWith(nextLanguage.code)}
           >
-            {nextLanguage.name} {nextLanguage.flag}
+            <p>{nextLanguage.name}</p>
+            <p>{nextLanguage.flag}</p>
           </li>
         </ul>
       )}

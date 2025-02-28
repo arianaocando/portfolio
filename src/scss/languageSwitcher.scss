@@ -1,51 +1,56 @@
+@import "./custom-variables";
+
 .dropdown-container {
     position: relative;
     display: inline-block;
     width: 150px;
-    background-color: rgba(168, 146, 192, 1);
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 16px;
+    background-color: $accent;
+    border-radius: $border;
+    padding: $spacing*2;
    
-   &[aria-expanded="true"] {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-   }
+    &[aria-expanded="true"] {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    p{
+      margin-bottom: 0;
+    }
     button {
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: none;
-     font-weight: 600;
-     color: rgba(242, 239, 246, 1);
-  }
-  .dropdown-list {
-    position: absolute;
-    left: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 100%;
-    background-color: rgba(168, 146, 192, 1);
-    border-radius: 0 0 12px 12px;
-    border-color: rgba(168, 146, 192, 1);
-    cursor: pointer;
-    &:hover {
-        background-color: darken(#9b7cb6, 15%);
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      color: $main-light;
+    }
+    .dropdown-list {
+      position: absolute;
+      left: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 100%;
+      background-color: $accent;
+      border-radius: 0 0 12px 12px;
+      border-color: $accent;
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
+      cursor: pointer;
+      &:hover {
+          background-color: $accent-dark-0;
+        }
   }
  
   li {
-    
-    color: rgba(242, 239, 246, 1);
-    font-weight: 600;
-    padding: 10px;
+    color: $main-light;
+    padding: $spacing*3;
     border: none;
     background: none;
     width: 100%;
     text-align: left;
-    
   }
 }
