@@ -1,0 +1,27 @@
+@import "./custom-variables";
+
+.theme-button {
+  position: relative;
+  padding: $spacing*2 $spacing*2.5;
+  border: none;
+  border-radius: $spacing*5;
+  cursor: pointer;
+  transition: all $transition-speed ease;
+  background-color: $secundary-dark-0;
+  margin-right: $spacing*2;
+  box-shadow: 0 $spacing $border $accent-dark-1;
+  &:hover:not(.disabled) {
+    background-color: $accent-dark-2;
+  }
+  &:active:not(.disabled) {
+    transform: scale(0.98);
+  }
+  &.active {
+    background-color: $accent-dark-0;
+    box-shadow: 0 $spacing $border $accent-dark-2;
+  }
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
