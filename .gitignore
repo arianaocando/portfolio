@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.esbuild/
+*.tsbuildinfo
+
+# Vite
+.vite/
+.vitepress/dist/
+temp/
+
+# Static files
+public/vite.svg
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Locales
+src/locales/*.json
