@@ -18,7 +18,7 @@ function SkillCard({ info, index }: SkillCardProp) {
       <p className="skill-card__title">{info.role}</p>
       <PillButton
         skills={info.stacks}
-        activeClass={activeSkill ? true : false}
+        activePillLabel={activeSkill}
         onClick={(nextState) => {
           setActiveSkill(nextState);
         }}

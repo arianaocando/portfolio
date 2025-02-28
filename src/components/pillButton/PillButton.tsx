@@ -4,6 +4,7 @@ interface PillButtonProp {
   index?: number;
   skills: string[];
   activeClass?: boolean;
+  activePillLabel?: string;
   onClick?: (nextState: string) => void;
 }
 
@@ -11,6 +12,7 @@ function PillButton({
   index,
   skills,
   activeClass = false,
+  activePillLabel,
   onClick = () => {},
 }: PillButtonProp) {
   return (
@@ -19,7 +21,7 @@ function PillButton({
         <button
           onClick={() => onClick(skill)}
           key={index}
-          className={activeClass ? "active" : ""}
+          className={activeClass || activePillLabel === skill? "active" : ""}
         >
           {skill}
         </button>
