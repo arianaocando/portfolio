@@ -1,11 +1,13 @@
-import { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import SkillPill from "../../components/skillPill/SkillPill";
-import { Project, projects } from "../../config/constants";
+import "@styles/ProjectsSection.scss";
+import PillButton from "../../components/pillButton/PillButton.tsx";
+import { Project, projects } from "../../config/constants.ts";
 
 function ProjectSection() {
-  const [selectedProject, setSelectedProject] = useState<Project>(projects[0]);
-
+  const [selectedProject, setSelectedProject] = React.useState<Project>(
+    projects[0]
+  );
   const { t } = useTranslation();
   return (
     <section id="portfolio" className="portfolio">
@@ -21,7 +23,7 @@ function ProjectSection() {
               }`}
               onClick={() => setSelectedProject(project)}
             >
-              <div>
+              <div className="portfolio__item-info">
                 <p className="portfolio__item-title">{project.title}</p>
                 <p className="portfolio__item-resume">{project.title}</p>
               </div>
@@ -44,21 +46,15 @@ function ProjectSection() {
               className="portfolio__details-image"
             />
           </div>
-          <div className="portfolio__details-info">
-            <h3 className="portfolio__details-title">
-              {selectedProject.title}
-            </h3>
-            <p className="portfolio__details-description">
-              {selectedProject.description}
-            </p>
-            <p className="portfolio__details-stack">
-              Tecnologias de desarrollo
-            </p>
-            <SkillPill
-              skills={selectedProject.technologies}
-              activeClass={true}
-            />
-          </div>
+          <h3 className="portfolio__details-title">{selectedProject.title}</h3>
+          <p className="portfolio__details-description">
+            {selectedProject.description}
+          </p>
+          <p className="portfolio__details-stack">Tecnologias de desarrollo</p>
+          <PillButton
+            skills={selectedProject.technologies}
+            activeClass={true}
+          />
         </div>
       </div>
     </section>

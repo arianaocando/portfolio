@@ -1,7 +1,7 @@
 import "@styles/PillButton.scss";
 
 interface PillButtonProp {
-  index: number;
+  index?: number;
   skills: string[];
   activeClass?: boolean;
   onClick?: (nextState: string) => void;
