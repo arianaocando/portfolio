@@ -1,7 +1,7 @@
-import githubIcon from "@assets/githubIcon.svg";
-import linkedinIcon from "@assets/linkedinIcon.svg";
-import gitlabIcon from "@assets/gitlabIcon.svg";
-import teamWorkImage from "@assets/team-work.jpg";
+import githubIcon from "@assets/icon/githubIcon.svg";
+import linkedinIcon from "@assets/icon/linkedinIcon.svg";
+import gitlabIcon from "@assets/icon/gitlabIcon.svg";
+import teamWorkImage from "@assets/jpg/team-work.jpg";
 
 interface HeaderSection {
   code: string;
@@ -103,6 +103,29 @@ export const skillsData: SkillProps[] = [
     ],
   },
   {
+    role: "soft skills",
+    stacks: [
+      "javascript",
+      "typescript",
+      "SQL",
+      "PostgreSQL",
+      "NodeJs",
+      "ExpressJs",
+      "Fastify",
+      "MongoDB",
+    ],
+    title: "NodeJs",
+    description:
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribsSalami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs",
+    portfolio: [
+      {
+        title: "Lorem ipsum dolor sit.",
+        company: "elit aliquip id ",
+        url: "#back-project",
+      },
+    ],
+  },
+  {
     role: "backend",
     stacks: [
       "javascript",
@@ -158,6 +181,34 @@ export const projects: Project[] = [
   },
   {
     id: "back-project",
+    title: "This great backend project",
+    resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
+    description:
+      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+    image: teamWorkImage,
+    technologies: ["NodeJS", "Typescript", "MongoDB"],
+  },
+  {
+    id: "lorem1",
+    title: "My amazing project with very long name",
+    resume:
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
+    description:
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
+    image: teamWorkImage,
+    technologies: ["Typescript", "Laravel", "PostgreSQL"],
+  },
+  {
+    id: "lading-page1",
+    title: "Another great project",
+    resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
+    description:
+      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+    image: teamWorkImage,
+    technologies: ["React", "SASS", "Node.js"],
+  },
+  {
+    id: "back-project1",
     title: "This great backend project",
     resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
     description:
