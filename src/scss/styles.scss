@@ -1,46 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tsukimi+Rounded&display=swap');
 @import "./custom-variables";
-@import "./positionSection.scss";
-@import "./backgroundSection.scss";
-@import "./cardLarge.scss";
-@import "./timeLineItem.scss";
-@import "./footer.scss";
-@import "./navbar.scss";
-@import "./languageSwitcher.scss";
-@import "./bannerSection.scss";
-@import "./skillsSection.scss";
-@import "./carouselCard.scss";
-@import "./skillsCard.scss";
-@import "./skillPill.scss";
-@import "./projectsSection.scss";
-@import "./layout.scss";
-
-
-/**
-* Custom Colors
-*/
-$primary: #3B5C66;
-$secondary: rgba(168, 146, 192, 1);
-$secondary-ligth: #DEDBFC;
-$therciary: hsla(329, 40%, 50%, 1);
-$ligth: rgba(242, 239, 246, 1);
-$background-color: #F2EFF6;
-
-/**
-* Custom Fonts
-*/
-$font-family-base: 'Quicksand', serif;
-$font-language-button: 'Tsukimi Rounded', sans-serif;
-
-/**
-* Custom Navbar Font
-*/
-$nav-font-size: 27px;
-$nav-font-weight: 400;
-$nav-button-size: 18px;
-$nav-button-weight: 600;
-
 @import "bootstrap/scss/bootstrap";
 
 html {
@@ -48,9 +8,17 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
-  color: $primary;
-  background-color: $background-color;
+  font-family: 'Quicksand', serif;
+  font-size: $body-font-size-base;
+  font-weight: $body-font-weight;
+  color: $primary-font-color;
+  background-color: $main-light;
+  * {
+    font-size: 1rem;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }  
 };
 
 
