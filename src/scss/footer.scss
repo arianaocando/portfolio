@@ -1,56 +1,59 @@
+@import "./custom-variables";
+
 .footer-container {
+  width: 99.1dvw;
+  height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color:$accent;
+  .content-container{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  background-color: rgba(168, 146, 192, 1);
-  color: rgba(249, 242, 225, 1);
-  padding: 20px;
-  text-align: center;
-  margin-top: 6%;
-  height: 60dvh;
-  justify-content: flex-end;
-  .contact-text {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 40px;
-  }
-  .description-text {
-    color: hsla(269, 27%, 15%, 1);
-    font-size: 16px;
-    font-weight: 400;
-    width: 730px;
-    margin-bottom: 70px;
-    text-align: justify;
-  }
-  .footer-buttons {
-    display: flex;
-    flex-direction: row;
-    width: 550px;
-    justify-content: space-between;
-    border-radius: 12px;
-    padding: 12px;
-    .btn-secondary {
+    .contact-text {
+      color: $main-light;
+      font-size: 2.5rem;
+      font-weight: $bold-font-weight;
+      margin-top: $spacing*11;
+      margin-bottom: $spacing*15;
+      text-align: center;
+    }
+    .description-text {
+      width: 100%;
+      margin-bottom: $spacing*20;
+      text-align: justify;
+    }
+    .footer-buttons {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      background-color: hsl(329, 40%, 50%);
-      padding: 12px 24px;
-      border-radius: 12px;
-      a {
-        text-decoration: none;
-        color: #F2EFF6;
-        margin-left: 5px;
-        font-size: 20px;
-        font-weight: 700;
-      }
-      &:hover {
-        background-color: rgb(117, 82.125, 147.375);
+      width: 60%;
+      .btn-secondary {
+        display: flex;
+        align-items: center;
+        background-color: $therciary;
+        padding: $spacing*3 $spacing*6;
+        border-radius: $border;
+        border: none;
+        a {
+          text-decoration: none;
+          color: $main-light;
+          margin-left: $spacing*3;
+          font-size: 1.25rem;
+          font-weight: $bold-font-weight;
+        }
+        &:hover {
+          background-color: $accent-dark-2;
+        }
       }
     }
   }
   .develop-name {
-    margin: 170px 0px 20px 0px;
-    color: #F2EFF6;
-    font-size: 16px;
-    font-weight: 400;
+    margin-bottom: $spacing*5;
+    color: $main-light;
   }
 }
