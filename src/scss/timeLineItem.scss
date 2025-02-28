@@ -1,45 +1,69 @@
+@import "./custom-variables";
 
 .timeline-item {
-    position: relative;
-    margin-bottom: 40px;
+    padding: $spacing*6;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 600px;
+    border-radius: $border;
+    margin-bottom: $spacing*4;
+    position: relative;
     
+    .arrow { 
+      position: absolute;
+      width: $spacing*6;
+      height: $spacing*6;
+      background-color: $secundary-light;
+      transform: rotate(45deg);
+      left: -$spacing*2.5;
+      transition: 0.3s ease-in-out;
+      align-self: center;
+    }
+
     &:hover {
       transform: scale(1.05);
     }
 
-    &.selected {
-      .card {
-        background: rgba(240, 219, 230, 1);
-        border: 2px solid #b5a3d6;
-        h3 {
-          color:rgba(179, 76, 129, 1)
-        }
-      }
-      .year {
-        color: rgba(179, 76, 129, 1);
-      }
-    }
-
     .year {
-      position: absolute;
-      left: -120px;
-      font-size: 30px;
-      font-weight: bold;
-      color:rgba(168, 146, 192, 1)
+      font-weight: $semibold-font-weight;
+      font-size: 3rem;
+      color: $accent;
+      line-height: 3rem;
     }
-
-    .card {
-    color:  #3B5C66;
-      background: #f9f3eb;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      width: 80%;
+    .card-content {
+      width: 70%;
+      h3 { 
+        font-weight: $semibold-font-weight;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+      }
+      h4 {
+        color: $accent-dark-1;
+        margin-bottom: 0;
+      }
       p {
-        color: rgba(178, 167, 190, 1);
-        font-size: 16px;
+        color: $accent-dark-2;
+        margin-bottom: 0;
+      }
+    }
+    &.selected {
+      background-color: $secundary-light;
+      .card-content {
+        h3 { 
+          font-weight: $semibold-font-weight;
+          font-size: 1.25rem;
+          color: $therciary;
+        }
+        h4 {
+          color: $accent-dark-2;
+        }
+        p {
+          color: $primary-font-color;
+        }
       }
     }
   }
