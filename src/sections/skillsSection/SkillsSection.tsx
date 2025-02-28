@@ -1,7 +1,7 @@
 import "@styles/SkillsSection.scss";
 import { useTranslation } from "react-i18next";
 import SkillCard from "../../components/skillsCard/SkillsCard.tsx";
-import { SkillProps, skillsData } from "../../config/constants.ts";
+import { SkillProps, skillsData } from "../../config/constants.tsx";
 
 function SkillsSection() {
   const { t } = useTranslation();
