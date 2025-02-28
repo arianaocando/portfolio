@@ -1,19 +1,24 @@
+@import "./custom-variables";
+
 .banner-section {
-    width: 100%;
+    width: 100dvw;
+    img {
+        z-index: -1;
+    }
     &__content {
         position: absolute;
         top: 50%;
-        left: 197px;
+        left: 10%;
         line-height: 5rem;
         h1 {
-            font-size: 80px;
-            font-weight: 600;
-            color: rgba(242, 239, 246, 1);
+            font-size: $body-font-size-base*5;
+            font-weight: $semibold-font-weight;
+            color: $primary-font-color;
             line-height: inherit;
             margin: 0;
         }
         .lastname{
-            font-weight: 300;
+            font-weight: $light-font-weight;
         }
     }
 }
