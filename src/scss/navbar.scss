@@ -1,22 +1,26 @@
+@import "./custom-variables";
+
 .navbar-content {
-    width: 70%;
-    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-self: center;
     justify-content: space-between;
-    padding: 24px 0px;
+    padding: $spacing*6 0px;
     &__item-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 456px;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 1.1rem;
+        font-weight: $semibold-font-weight;
         text-transform: capitalize;
+        a:nth-child(3) {
+            margin-right: 0px;
+        }
         a {
+            margin-right: $spacing*22;
             text-decoration: none;
             &:hover, &:focus {
-                color: rgba(168, 146, 192, 1);
+                color: $accent;
             }
         }
     }
