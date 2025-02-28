@@ -10,6 +10,7 @@ body {
     --accent-dark-0: hsla(269, 27%, 40%, 1);
     --secundary-light: hsla(329, 40%, 90%, 1);
     --secundary-dark-0: hsla(329, 40%, 82%, 1);
+    --secundary-dark-1: hsla(329, 40%, 82%, 1);
     --therciary   : hsla(329, 40%, 50%, 1);
     transition: 0.35s;
 }
@@ -18,17 +19,18 @@ body {
 *   Dark Theme
 */
 body[ariana-ocando-dark-theme="dark"] {
-    --primary-font-color: hsla(269, 27%, 85%, 1);
+    --primary-font-color: hsla(269, 27%, 90%, 1);
     --main-light: hsla(269, 27%, 5%, 1);
-    --accent-light-1: hsla(269, 50%, 10%, 1);
+    --accent-light-1: hsla(269, 50%, 15%, 1);
     --accent-light-2: hsla(269, 27%, 30%, 1);
     --accent-light-0: hsla(269, 27%, 20%, 1);
     --accent: hsla(269, 27%, 34%, 1);
     --accent-dark-2: hsla(269, 15%, 30%, 1);
     --accent-dark-1: hsla(269, 27%, 49%, 1);
     --accent-dark-0: hsla(269, 27%, 60%, 1);
-    --secundary-light: hsla(329, 40%, 10%, 1);
-    --secundary-dark-0: hsla(329, 40%, 18%, 1);
+    --secundary-light: hsla(329, 40%, 20%, 1);
+    --secundary-dark-0: hsla(329, 40%, 3%, 1);
+    --secundary-dark-1: hsla(329, 40%, 18%, 1);
     --therciary   : hsla(329, 40%, 50%, 1);
 }
 
@@ -46,6 +48,7 @@ $accent-dark-1: var(--accent-dark-1) ;
 $accent-dark-0: var(--accent-dark-0) ;
 $secundary-light: var(--secundary-light) ;
 $secundary-dark-0: var(--secundary-dark-0) ;
+$secundary-dark-1: var(--secundary-dark-1) ;
 $therciary:  var(--therciary);
 
 /**

@@ -8,8 +8,8 @@
   cursor: pointer;
   transition: all $transition-speed ease;
   background-color: $secundary-dark-0;
-  margin-right: $spacing*2;
-  box-shadow: 0 $spacing $border $accent-dark-1;
+  margin-right: $spacing*4;
+  box-shadow: 0 $spacing/2 $spacing $accent-dark-1;
   &:hover:not(.disabled) {
     background-color: $accent-dark-2;
   }
@@ -18,7 +18,7 @@
   }
   &.active {
     background-color: $accent-dark-0;
-    box-shadow: 0 $spacing $border $accent-dark-2;
+    box-shadow: 0 $spacing/2 $spacing $primary-font-color;
   }
   &.disabled {
     opacity: 0.6;

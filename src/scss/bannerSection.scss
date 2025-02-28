@@ -1,7 +1,7 @@
 @import "./custom-variables";
 
 .banner-section {
-    width: 100dvw;
+    width: 99.1dvw;
     img {
         z-index: -1;
     }
@@ -13,8 +13,9 @@
         h1 {
             font-size: $body-font-size-base*5;
             font-weight: $semibold-font-weight;
-            color: $primary-font-color;
             line-height: inherit;
+            // the only hardcoded color in the app
+            color: hsla(269, 27%, 95%, 1);
             margin: 0;
         }
         .lastname{

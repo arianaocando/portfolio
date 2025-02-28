@@ -22,7 +22,6 @@
       justify-content: space-between;
       align-items: center;
       border: none;
-      color: $main-light;
     }
     .dropdown-list {
       position: absolute;
@@ -46,7 +45,6 @@
   }
  
   li {
-    color: $main-light;
     padding: $spacing*3;
     border: none;
     background: none;
