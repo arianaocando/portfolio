@@ -6,123 +6,109 @@
     flex-direction: column;
     justify-self: center;
     margin-top: $spacing*20;
+    margin-bottom: $spacing*60;
+    
     .section-name {
       width: fit-content;
       font-size: 2.75rem;
+      margin-bottom: $spacing*9;
       font-weight: $semibold-font-weight;
       color:  $therciary;
       text-transform: capitalize;
     }
   
-  &__container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .section-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      overflow: visible;
 
-  &__list {
-    width: 45%;
-    //height: 400px;
-    display: flex;
-    flex-direction: column;
-    //overflow-y: scroll;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    border-radius: $spacing*3;
-    cursor: pointer;
-    background: $secundary-light;
-    transition: background 0.3s;
-    overflow: hidden;
-    padding-left: $spacing*4;
-    justify-content: space-between;
-    transition: 0.3s ease-in-out;
-    margin-bottom: $spacing*3;
-    &:hover {
-        transform: scale(1.05);
-    }
-    &.active {
-      background: $accent-light-1;
-      .portfolio__item-title {
-        color: $therciary;
+      .list {
+        width: 40%;
+        max-height: 60dvh;
+        overflow-y: scroll;
+        overflow-x: visible;
+        padding-right: $spacing*4;
+        .item {
+          display: flex;
+          justify-content: space-between;
+          border-radius: $border;
+          cursor: pointer;
+          margin-bottom: $spacing*4;
+          background: $secundary-light;
+          transition: background 0.3s;
+          transition: 0.3s ease-in-out;
+          .item-info {
+            padding: $spacing*4 0 $spacing*4 $spacing*4;
+            align-self: flex-start;
+            width: 65%;
+            .item-title {
+              color: $primary-font-color;
+              font-size: $spacing*4;
+              margin-bottom: $spacing;
+            }
+            .item-resume {
+              font-size: 0.95rem;
+              color: $secundary-dark-0;
+            }
+            p {
+              margin: 0;
+            }
+          }
+          .image-container {
+            width: 30%;
+            border-top-right-radius: $border;
+            border-bottom-right-radius: $border;
+            overflow: hidden;
+            .item-image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          &:hover {
+              transform: scale(0.95 );
+          }
+          &.active {
+            background: $accent-light-1;
+            .item-title {
+              color: $therciary;
+              font-weight: $semibold-font-weight;
+            }
+            .item-resume {
+              color: $accent-light-2;
+            }
+          }
+        }
       }
-      .portfolio__item-resume {
-        color: $accent-light-2;
+
+      .details {
+        width: 55%;
+        .image-container {
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          overflow: hidden;
+          height: 200px;
+          margin-bottom: $spacing*3;
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+        }
+        .title {
+          margin-bottom: $spacing;
+          font-size: 1.25rem;
+          font-weight: $bold-font-weight;
+          color: $therciary;
+        }
+        .stack {
+          color: $accent;
+          font-weight: $semibold-font-weight;
+          margin-top: $spacing*4;
+        }
       }
     }
-  }
-
-  &__item-info {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    .portfolio__item-title {
-      color: $primary-font-color;
-      font-size: $spacing*4;
-      font-weight: $semibold-font-weight;
-    }
-
-     .portfolio__item-resume {
-      font-size: $spacing*3.5;
-      font-weight: $body-font-weight;
-      color: $secundary-dark-0;
-    }
-    p {
-      margin: 0;
-    }
-  }
- 
-   &__image-container {
-      width: 25%;
-      .portfolio__item-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-  &__details {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    flex-direction: column;
-    &-image-container {
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      overflow: hidden;
-      height: 200px;
-      img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
-    }
-    &-title {
-      margin-top: $spacing*3.5;
-      margin-bottom: $spacing;
-      font-size: 1.25rem;
-      font-weight: $bold-font-weight;
-      color: $therciary;
-    }
-    &-description {
-      color: $primary-font-color;
-    }
-    &-stack {
-      color: $accent;
-      font-size: $spacing*4;
-      font-weight: $semibold-font-weight;
-    }
-  }
-
-  @media (max-width: 768px) {
-    &__container {
-      flex-direction: column;
-    }
-  }
 }
