@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { SkillProps } from '../../config/constants';
-import SkillPill from '../skillPill/SkillPill';
+import PillButton from "../pillButton/PillButton";
 
 function SkillCard({ info, key }: { info: SkillProps; key: number }) {
   const [activeSkill, setActiveSkill] = useState<string | undefined>('typescript')
@@ -8,12 +8,13 @@ function SkillCard({ info, key }: { info: SkillProps; key: number }) {
   return (
     <div className="skill-card w-100 mb-5" key={key}>
       <p className="skill-card__title">{info.role}</p>
-      <SkillPill
+      <PillButton
         skills={info.stacks}
-        activeClass={activeSkill}
+        activeClass={activeSkill ? true : false}
         onClick={(nextState) => {
           setActiveSkill(nextState);
         }}
+        index={index}
       />
       {activeSkill && (
         <div className="skill-card__container">
