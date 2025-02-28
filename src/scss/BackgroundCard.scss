@@ -1,0 +1,35 @@
+@import "./custom-variables";
+
+.featured-card {
+    background: $secundary-light;
+    width: 100%;
+    border-radius: $border;
+    margin-bottom: $spacing*10;
+    .image-container{
+        width: 100%;
+        border-top-left-radius: $border;
+        border-top-right-radius: $border;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .content {
+        padding: $spacing*6 $spacing*3;
+        h3 {
+            color: $therciary;
+            font-weight: $semibold-font-weight;
+            font-size: 1.25rem;
+            margin-bottom: $spacing*1;
+        }
+        h4 {
+            color: $accent-dark-2;
+            margin-bottom: $spacing*3;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
