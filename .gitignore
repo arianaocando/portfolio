@@ -26,5 +26,8 @@ public/vite.svg
 .DS_Store
 Thumbs.db
 
+# Package log
+package-lock.json
+
 # Locales
 src/locales/*.json
