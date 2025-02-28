@@ -1,0 +1,21 @@
+@import "./custom-variables";
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    button {
+        background-color: $secundary-light;
+        color: $accent;
+        border-radius: $border;
+        padding: $spacing*2 $spacing*3;
+        font-weight: $semibold-font-weight;
+        margin-right: $spacing*4;
+        margin-bottom: $spacing*3;
+        text-transform: capitalize;
+        border: none;
+        &:hover, &.active {
+            background-color: $therciary;
+            color: $main-light;
+        }
+    }
+}
