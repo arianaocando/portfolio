@@ -1,7 +1,7 @@
 import githubIcon from "@assets/icon/githubIcon.svg";
 import linkedinIcon from "@assets/icon/linkedinIcon.svg";
 import gitlabIcon from "@assets/icon/gitlabIcon.svg";
-import teamWorkImage from "@assets/jpg/team-work.jpg";
+import teamWorkImage from "@assets/jpg/company_logo_placeholder.jpg";
 
 interface HeaderSection {
   code: string;
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     resume:
       "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     description:
-      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["Typescript", "Laravel", "PostgreSQL"],
   },
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     title: "Another great project",
     resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
     description:
-      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["React", "SASS", "Node.js"],
   },
@@ -184,7 +184,7 @@ export const projects: Project[] = [
     title: "This great backend project",
     resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
     description:
-      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["NodeJS", "Typescript", "MongoDB"],
   },
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     resume:
       "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     description:
-      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["Typescript", "Laravel", "PostgreSQL"],
   },
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     title: "Another great project",
     resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
     description:
-      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["React", "SASS", "Node.js"],
   },
@@ -212,7 +212,7 @@ export const projects: Project[] = [
     title: "This great backend project",
     resume: "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck.",
     description:
-      "Pancetta cow ipsum incididunt, leberkas picanha lorem chuck. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip...",
+      "Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Deserunt bacon cupim, voluptate consequat sed venison nisi aliquip tri-tip. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor. Salami incididunt dolore andouille cupidatat elit aliquip id sausage spare ribs turkey tempor.",
     image: teamWorkImage,
     technologies: ["NodeJS", "Typescript", "MongoDB"],
   },
