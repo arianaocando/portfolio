@@ -2,8 +2,8 @@ import "@styles/LanguageSwitcher.scss";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import arrowSVG from "@/assets/icon/Vector.svg";
-import { Language } from "@/types/language.ts";
-import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from "@/config/languages.ts";
+import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from "../../config/languages";
+import { Language } from "../../types/language";
 
 /**
  * Language switcher component that displays a dropdown with available languages

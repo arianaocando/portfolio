@@ -2,9 +2,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "@styles/BackgroundSection.scss";
 import image from "../../assets/jpg/company_logo_placeholder.jpg";
-import BackgroundCard from "@components/backgroundCard/BackgroundCard.tsx";
-import TimelineItem from "@components/timeLineItem/TimeLineItem.tsx";
 import { timelineData } from "../../config/constants.tsx";
+import BackgroundCard from "../../components/backgroundCard/BackgroundCard.tsx";
+import TimelineItem from "../../components/timeLineItem/TimeLineItem.tsx";
 
 function BackgroundSection() {
   const [selectedItem, setSelectedItem] = React.useState(timelineData[0]);

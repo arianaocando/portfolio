@@ -1,4 +1,3 @@
-import NavBar from "@components/navBar/NavBar.tsx";
 import Layout from "./sections/layout/index.tsx";
 import ThemeModeProvider from "./providers/ThemeModeProvider.tsx";
 import BannerSection from "./sections/bannerSection/BannerSection.tsx";
@@ -7,6 +6,7 @@ import BackgroundSection from "./sections/backgroundSection/BackgroundSection.ts
 import SkillsSection from "./sections/skillsSection/SkillsSection.tsx";
 import ProjectSection from "./sections/projectsSection/ProjectsSection.tsx";
 import Footer from "./sections/footer/Footer.tsx";
+import NavBar from "./components/navBar/NavBar.tsx";
 
 function App() {
   return (
