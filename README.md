@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un portafolio personal desarrollado con React, TypeScript y Vite. El objetivo del proyecto es mostrar las habilidades, proyectos y experiencia de mi persona. El portafolio incluye secciones para la trayectoria, habilidades y proyectos, así como un selector de idioma y un botón para cambiar el tema entre claro y oscuro.
 
-Currently, two official plugins are available:
+## Librerías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React: Biblioteca de JavaScript para construir interfaces de usuario.
+- TypeScript: Un superconjunto de JavaScript que añade tipos estáticos.
+- Vite: Un bundler de aplicaciones web rápido y moderno.
+- i18next: Biblioteca para la internacionalización y localización de aplicaciones.
+- Bootstrap: Framework CSS para el diseño responsivo y componentes predefinidos.
+- SASS: Preprocesador CSS que permite el uso de variables, anidación y más.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
+## Estructura del Proyecto
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+.gitignore
+eslint.config.js
+package.json
+public
+README.md
+src/
+    App.tsx
+    assets/
+    components/
+    config/
+    contexts/
+    i18n/
+    locales/
+    main.tsx
+    providers/
+    scss/
+    sections/
+    types/
+    utils/
+    vite-env.d.ts
+tsconfig.json
+vite.config.ts
 ```
+## Guía de Inicio
+Sigue estos pasos para iniciar el proyecto en tu entorno local:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerrequisitos
+Asegúrate de tener instalados Node.js y npm en tu máquina.
 
+### Instalación
+1. Clona el repositorio:
 ```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+git clone https://github.com/arianaocando/portfolio.git
 ```
+2. Navega al directorio del proyecto:
+```js
+cd portfolio
+```
+3. Instala las dependencias:
+```js
+npm install
+```
+### Ejecución en Desarrollo
+Para iniciar el servidor de desarrollo, ejecuta:
+```js
+npm run dev
+```
+Esto abrirá la aplicación en http://localhost:3000.
