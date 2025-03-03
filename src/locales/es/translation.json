@@ -1,9 +1,9 @@
 {
   "navbar": {
     "sections": {
-        "background": "trayectoria",
-        "skills": "habilidades",
-        "projects": "projectos"
+      "background": "trayectoria",
+      "skills": "habilidades",
+      "projects": "projectos"
     }
   },
   "banner": {
